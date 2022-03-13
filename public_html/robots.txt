@@ -1,0 +1,27 @@
+User-agent: Yandex
+Allow: /
+Allow: */*.png
+Allow: */*.jpg
+Allow: */*.gif
+Allow: */*.JPEG
+Allow: */*.svg
+Allow: */*.js
+Allow: */*.css
+Disallow: */*?*
+
+
+
+User-agent: *
+Allow: /
+Allow: */*.png
+Allow: */*.jpg
+Allow: */*.gif
+Allow: */*.JPEG
+Allow: */*.svg
+Allow: */*.js
+Allow: */*.css
+Disallow: */*?*
+
+
+Host: https://www.sweetcorp.ru/
+Sitemap: https://www.sweetcorp.ru/sitemap.xml
