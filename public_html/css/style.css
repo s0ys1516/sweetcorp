@@ -1431,10 +1431,6 @@ li {
 
 }
 
-.advantages__body {
-  flex-direction: column;
-}
-
 .advantages__item-text {
   padding-left: 30%;
   padding-right: 30%;
