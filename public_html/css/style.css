@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 /*Обнуление*/
 *{
 	padding: 0;
@@ -697,7 +697,7 @@ li {
 .discount__item {
   position: relative;
   height: 230px;
-  background: url(../img/index_section7_block_bg.png);
+  /* background: url(../img/index_section7_block_bg.png); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -766,7 +766,7 @@ li {
 }
 
 .img__factory {
-  max-width: 70px;
+  max-width: 100px;
 }
 
 .di-bot::before {
@@ -996,7 +996,7 @@ li {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  margin: 10px;
+  margin: auto;
   position: relative;
 }
 
@@ -1431,16 +1431,20 @@ li {
 
 }
 
+.advantages__body {
+  flex-direction: column;
+}
+
+.advantages__item-text {
+  padding-left: 30%;
+  padding-right: 30%;
+}
 
 @media screen and (max-width: 768px) {
 
 
   .advantages__body {
     flex-direction: column;
-  }
-   
-  .advantages__item {
-    align-items: center;
   }
 
   .advantages__item-text {
@@ -1589,6 +1593,7 @@ li {
   font-weight: 400;
   text-align: center;
   margin-bottom: 10px;
+  line-height: 22px;
 }
 
 .sale__body > p {
@@ -1888,7 +1893,7 @@ li {
   font-weight: 300;
 }
 
-.map {
+/* .map {
   position: relative;
   padding-bottom: 0px;
 }
@@ -1975,6 +1980,7 @@ li {
 
 .map-st > img {
   width: 100%;
+  max-height: 45px;
 }
 
 .map-up > img {
@@ -2040,7 +2046,6 @@ li {
 
   .map__comp {
     height: 417px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2091,7 +2096,7 @@ li {
 
 .map__comp > img {
   width: 100%;
-}
+} */
 
 .partners {
   background: #0B261C;
@@ -2359,6 +2364,13 @@ footer > .container {
     height: calc(230px * 0.7);
     width: calc(300px * 0.7);
   }
+
+  
+  .discount__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+ 
 }
 
 @media screen and (max-width: 940px) {
@@ -2407,11 +2419,6 @@ footer > .container {
         flex-wrap: wrap;
   }
 
-  .discount__body {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
- 
 
   .advantages__item {
     margin-top: 0px;
@@ -2614,6 +2621,12 @@ footer > .container {
 
   .advantages__span {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .img__factory {
+    max-width: 70px;
   }
 }
 
@@ -2927,4 +2940,84 @@ fieldset:disabled a.btn {
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+/* Glide */
+
+.glide,
+.glide2,
+.glide3 {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.glide,
+.glide2,
+.glide3 * {
+  box-sizing: inherit;
+}
+.glide__track,
+.glide2__track,
+.glide3__track {
+  overflow: hidden;
+}
+.glide__slides,
+.glide2__slides,
+.glide3__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+  padding: 30px;
+  margin-top: 60px;
+}
+.glide__slides--dragging,
+.glide2__slides--dragging,
+.glide3__slides--dragging {
+  user-select: none;
+}
+.glide__slide,
+.glide2__slide,
+.glide3__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a,
+.glide2__slide a,
+.glide3__slide a {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.glide__arrows,
+.glide2__arrows,
+.glide3__arrows {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide__bullets,
+.glide2__bullets,
+.glide3__bullets {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide--rtl,
+.glide2--rtl,
+.glide3--rtl {
+  direction: rtl;
 }
