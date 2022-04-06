@@ -523,7 +523,7 @@ li {
 .main {
   width: 100%;
   height: 610px;
-  background-image: url(../img/index_section1_bg.png);
+  background-image: url(../img/background-test.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -580,7 +580,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* background-color: #061912; */
+  background-color: #061912;
  
 }
 
@@ -606,8 +606,10 @@ li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  max-width: 1860px;
   width: 100%;
   height: 100%;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1020px) {
@@ -675,6 +677,7 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 10px;
+  max-width: 1500px;
 }
 
 .discount__h3 {
@@ -770,7 +773,7 @@ li {
 }
 
 .img__factory {
-  max-width: 100px;
+  max-width: 205px;
 }
 
 .di-bot::before {
@@ -3019,8 +3022,8 @@ fieldset:disabled a.btn {
   padding: 20px;
   top: 310px;
   left: 60px;
-  background-image: url(../img/arrow-left.svg);
-  background-repeat: no-repeat;
+  /* background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat; */
 }
 
 .glide__arrow--right {
@@ -3028,26 +3031,26 @@ fieldset:disabled a.btn {
   padding: 20px;
   top: 310px;
   right: 60px;
-  background-image: url(../img/arrow-left.svg);
-  background-repeat: no-repeat;
+  /* background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat; */
 }
 
 .glide__arrow-fabric--left {
   position: absolute;
   padding: 20px;
-  top: 170px;
+  top: 205px;
   left: -20px;
-  background-image: url(../img/arrow-left.svg);
-  background-repeat: no-repeat;
+  /* background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat; */
 }
 
 .glide__arrow-fabric--right {
   position: absolute;
   padding: 20px;
-  top: 170px;
+  top: 205px;
   right: -50px;
-  background-image: url(../img/arrow-left.svg);
-  background-repeat: no-repeat;
+  /* background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat; */
 }
 
 .glide__bullets {
