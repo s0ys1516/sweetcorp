@@ -2083,6 +2083,10 @@ li {
   width: 100%;
 }
 
+.map__comp > .map-st:nth-child(1) > img {
+  width: 109px;
+}
+
 .partners {
   background: #0B261C;
   padding: 50px 0;
